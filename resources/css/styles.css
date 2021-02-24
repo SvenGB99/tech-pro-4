@@ -377,7 +377,7 @@ a {
 }
 
 .link {
-  color: #51ddfc;
+  color: #58e1c1;
   font-weight: 700;
 }
 
@@ -400,11 +400,16 @@ a {
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #fff;
+  color: #777;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
 }
 
 .default {
@@ -461,6 +466,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 
 .nav-link {
   text-align: center;
@@ -469,6 +481,11 @@ a {
   display: block;
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 .nav-link:hover {
@@ -510,11 +527,24 @@ a {
 .container {
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -523,6 +553,14 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
 }
 
 .theme.col-1 {
@@ -581,28 +619,10 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .row {
-    flex-direction: row;
-  }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
   }
 
   [class^=col] + [class^=col] {
@@ -661,14 +681,6 @@ a {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .nav-link {
-    flex-basis: 100px;
-  }
-
-  .btn {
-    padding: 10px 30px;
   }
 
   .btn + .btn {

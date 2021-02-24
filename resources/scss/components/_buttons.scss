@@ -6,15 +6,19 @@
 .btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color:$color-fp;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    
+    @media #{$brk-nerrow} {
+      padding: 10px 30px;
+    }
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $color-link;
   }
   
   .error {

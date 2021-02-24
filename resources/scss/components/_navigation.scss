@@ -8,6 +8,12 @@
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
+
+    @media #{$brk-nerrow} {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
   
   .nav-link {
@@ -19,11 +25,15 @@
     transition: 
       background-color .2s ease-in-out, 
       color .2s ease-in-out;
+
+    @media #{$brk-nerrow} {
+      flex-basis: 100px;
+    }
   }
   
   .nav-link:hover {
     color: #fff;
-    background-color: #58e1c1;
+    background-color: $color-primary;
   }
   
   
