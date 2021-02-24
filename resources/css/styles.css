@@ -400,7 +400,7 @@ a {
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #777;
+  color: #fff;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
@@ -675,12 +675,6 @@ a {
 
   .col-12 {
     flex-basis: 100%;
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .btn + .btn {
