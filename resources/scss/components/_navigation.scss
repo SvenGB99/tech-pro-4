@@ -29,11 +29,10 @@
     @media #{$brk-nerrow} {
       flex-basis: 100px;
     }
-  }
-  
-  .nav-link:hover {
+    
+  &:hover {
     color: #fff;
     background-color: $color-primary;
   }
-  
+}
   
