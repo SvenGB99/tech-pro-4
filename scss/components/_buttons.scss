@@ -19,38 +19,35 @@
   
   .default {
     background-color: $color-link;
-
     &:hover {
-      background-color: rgba($color-link, .85) ;
+      background-color: lighten($color-link, 15%);
     }
   }
   
   .error {
     background-color: #e4757a;
     &:hover {
-      background-color: rgba(228,117,122, .85) ;
+      background-color: lighten(#e4757a, 15%);
     }
   }
   
   .info {
     background-color: #927bc1;
     &:hover {
-      background-color: rgba(146,123,193, .85) ;
+      background-color:lighten(#927bc1, 15%);
     }
   }
   
   .success {
     background-color: #63cc82;
     &:hover {
-      background-color: rgba(99,204,130, .85) ;
+      background-color: lighten(#927bc1, 15%);
     }
   }
   
   .warning {
     background-color: #fd7856;
     &:hover {
-      background-color: rgba(253,120,86, .85) ;
+      background-color: lighten(#fd7856, 15%);
     }
   }
-  
-  
